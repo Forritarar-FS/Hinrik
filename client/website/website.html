@@ -1,0 +1,59 @@
+<template name="site1">
+	<div class="h1 text-center">
+        TjattX
+    </div>
+    <div class="row" style="margin-top:50px;">
+	    <div style="margin-left:10px;" class="col-md-3">
+	        {{> localwebcam}}
+	    </div>
+    	<div style="overflow: auto; height: 600px !important; margin-left:-10px;" class="col-md-6" id="chatWindow">
+        	<div>
+	            <table class="table table-bordered table-striped">
+	                <thead style="position:sticky">
+	                    <tr>
+	                        <th>
+	                            <p class="text-center"><i>Say Something!</i></p>
+	                        </th>
+	                    </tr>
+	                </thead>
+	                <tbody id="chatmessages" style="text-align:left;">
+	                    {{> messages}}
+	                </tbody>
+                  <tbody>
+	                <tr>
+	                    <td>{{> input}}</td>
+	                </tr>
+                </tbody>
+	            </table>
+        	</div>
+        </div>
+		<div style="margin-left:-10px;" class="col-md-3">
+			<div class="well" id="Camera2">
+				{{> remotewebcam}}
+			</div>
+		</div>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <p class="text-center text-muted">Copyright © 2015 TjattX.is. All Rights Reserved.</p>
+      </div>
+    </footer>
+</template>
+
+<template name="site2">
+	<header id="top" class="header">
+    	
+
+        <div style="color:white;" class="text-vertical-center">
+        
+        	<input type="checkbox" id="check" />
+        	<div id="rightcamera"></div>
+        	<div id="leftcamera"></div>
+            <h1>Tjatt</h1>
+            <h3>Spjallaðu og kynntust nýju fólki</h3>
+            <br>
+            <label for="check" class="fadebtn btn btn-dark btn-lg">Af stað!</label>
+        </div>
+
+    </header>
+</template>
