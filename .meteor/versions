@@ -28,6 +28,7 @@ ecmascript@0.1.6
 ecmascript-runtime@0.2.6
 ejson@1.0.7
 fastclick@1.0.7
+fds:streams@0.2.2
 geojson-utils@1.0.4
 github@1.1.4
 hot-code-push@1.0.0

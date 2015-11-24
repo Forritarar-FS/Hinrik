@@ -1,12 +1,15 @@
 <template name="localwebcam">
     <div class="well" id="Camera1" style="position: relative;"> <!-- LOCAL CAMERA -->
     	<img src="images/nocamera.png" class="img-responsive" style="width=320px; height: 240px; position: relative;">
-	    <video class="img-responsive" style="width=320px; height: 240px; margin-top:-240px;  position: absolute;"></video>
+    	<div id="videos">
+	    	<video id="localVideo" autoplay class="img-responsive" style="width=320px; height: 240px; margin-top:-240px;  position: absolute;"></video>
+	    </div>
 	</div>
 </template>
 <template name="remotewebcam">
     <div class="well" id="Camera2" style="position: relative;"> <!-- REMOTE CAMERA -->
 		<img src="../images/nocamera.png" class="img-responsive" style="width=320px; height: 240px; position: relative;">
+		<video id="remoteVideo" autoplay class="img-responsive" style="width=320px; height: 240px; margin-top:-240px;  position: absolute;"></video>
 	</div>
 	
 </template>
